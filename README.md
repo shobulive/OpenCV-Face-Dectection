@@ -38,10 +38,10 @@ It will load python like this
 Python 3.6.3 |Anaconda, Inc.| (default, Oct  6 2017, 12:04:38) 
 [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+
 Now input the following
 
->>>import cv2
+>import cv2
 
 if it works fine then openCV installed
 
