@@ -16,6 +16,8 @@ while (True):
 	for (x,y,w,h) in faces:
 		cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2);
 		id,conf=rec.predict(grayImg[y:y+h,x:x+w])
+		if(conf>50)
+		id="Unknown"
 		cv2.putText(img,str(id),(x,y+h),font,2,200,2,8)
 	cv2.imshow("Face",img);
 	if(cv2.waitKey(1)==ord('q')):
