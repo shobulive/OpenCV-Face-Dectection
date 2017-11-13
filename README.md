@@ -52,12 +52,15 @@ Please follow this link --> [Install TensorFlow](https://www.tensorflow.org/inst
 **4. Install Pillow**
 
 Input the following command
+
 >$ pip install pillow
 
 **5. Run the project**
 
 First clone the repository
+
 >$ git clone https://github.com/shubham56/OpenCV-Face-Dectection.git
+
 >$ cd OpenCV-Face-Dectection
 
 First you need to train the system by inputting the dataset:
