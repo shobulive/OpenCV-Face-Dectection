@@ -16,24 +16,7 @@ while (True):
 	for (x,y,w,h) in faces:
 		cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2);
 		id,conf=rec.predict(grayImg[y:y+h,x:x+w])
-		print(str(id)+","+str(conf))
-		name=""
-		if(conf<50):
-			if(id==1):
-				name="Shubham"
-			elif(id==2):
-				name="Miley"
-			elif(id==3):
-				name="Obama"
-			elif(id==5):
-				name="Jasbir"
-			elif(id==6):
-				name="Bob"
-			elif(id==7):
-				name="Padosi"
-		else:
-			name="Unknown"
-		cv2.putText(img,str(name),(x,y+h),font,2,200,2,8)
+		cv2.putText(img,str(id),(x,y+h),font,2,200,2,8)
 	cv2.imshow("Face",img);
 	if(cv2.waitKey(1)==ord('q')):
 		break;
